@@ -1,0 +1,162 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container-fluid " style="padding-top: 50px;padding-right: 10%; padding-left: 10%">
+        <div class="row">
+            <!-- My clubs / All Clubs -->
+            <div class="col-md-3 " >
+                <div class="row ">
+                    <!-- My clubs -->
+                    <div class="card-mb-4 bg-lightgray" style="min-height: 50px; max-height: 300px;
+                     width: 96%; margin: 2%; border: 2px double black">
+                            <div class="row "><h4>My clubs</h4></div>
+
+                            <div class="row" style="border: 2px solid black; margin: 0px 0px 5% 0px;overflow: auto;">
+                                <a class="clubs overflow-hidden" style="height: 50px" href="#">
+                                    <img class="img-thumbnail" src="{% static 'images/facebook.png' %}"
+                                         style="width: 36px;height: 36px;margin-top: 7px; display: inline-block">
+                                    <p class="name-club w-50" style="display: inline-block">Deneme</p>
+                                </a>
+                                <a class="clubs overflow-hidden" style="height: 50px" href="#">
+                                    <img class="img-thumbnail" src="{% static 'images/facebook.png' %}"
+                                         style="width: 36px;height: 36px;margin-top: 7px; display: inline-block">
+                                    <p class="name-club w-50" style="display: inline-block">Deneme</p>
+                                </a>
+                            </div>
+                    </div>
+
+                    <!-- All clubs -->
+                    <div class="card-mb-4 bg-lightgray" style="height: 300px; width: 96%; margin: 2%; border: 2px double black">
+                            <div class="row h-15"><h4>All Clubs</h4></div>
+
+
+                            <div class="row h-80" style="border: 2px solid black; margin: 0px 0px 5% 0px;overflow: auto">
+                                <a class="clubs overflow-hidden" style="height: 50px" href="#">
+                                    <img class="img-thumbnail" src="{% static 'images/facebook.png' %}"
+                                         style="width: 36px;height: 36px;margin-top: 7px; display: inline-block">
+                                    <p class="name-club w-50" style="display: inline-block">Deneme</p>
+                                </a>
+                                <a class="clubs overflow-hidden" style="height: 50px" href="#">
+                                    <img class="img-thumbnail" src="{% static 'images/facebook.png' %}"
+                                         style="width: 36px;height: 36px;margin-top: 7px; display: inline-block">
+                                    <p class="name-club w-50" style="display: inline-block">Deneme</p>
+                                </a>
+                                <a class="clubs overflow-hidden" style="height: 50px" href="#">
+                                    <img class="img-thumbnail" src="{% static 'images/facebook.png' %}"
+                                         style="width: 36px;height: 36px;margin-top: 7px; display: inline-block">
+                                    <p class="name-club w-50" style="display: inline-block">Deneme</p>
+                                </a>
+                                <a class="clubs overflow-hidden" style="height: 50px" href="#">
+                                    <img class="img-thumbnail" src="{% static 'images/facebook.png' %}"
+                                         style="width: 36px;height: 36px;margin-top: 7px; display: inline-block">
+                                    <p class="name-club w-50" style="display: inline-block">Deneme</p>
+                                </a>
+                                <a class="clubs overflow-hidden" style="height: 50px" href="#">
+                                    <img class="img-thumbnail" src="{% static 'images/facebook.png' %}"
+                                         style="width: 36px;height: 36px;margin-top: 7px; display: inline-block">
+                                    <p class="name-club w-50" style="display: inline-block">Deneme</p>
+                                </a>
+                                <a class="clubs overflow-hidden" style="height: 50px" href="#">
+                                    <img class="img-thumbnail" src="{% static 'images/facebook.png' %}"
+                                         style="width: 36px;height: 36px;margin-top: 7px; display: inline-block">
+                                    <p class="name-club w-50" style="display: inline-block">Deneme</p>
+                                </a>
+                                <a class="clubs overflow-hidden" style="height: 50px" href="#">
+                                    <img class="img-thumbnail" src="{% static 'images/facebook.png' %}"
+                                         style="width: 36px;height: 36px;margin-top: 7px; display: inline-block">
+                                    <p class="name-club w-50" style="display: inline-block">Deneme</p>
+                                </a>
+                                <a class="clubs overflow-hidden" style="height: 50px" href="#">
+                                    <img class="img-thumbnail" src="{% static 'images/facebook.png' %}"
+                                         style="width: 36px;height: 36px;margin-top: 7px; display: inline-block">
+                                    <p class="name-club w-50" style="display: inline-block">Deneme</p>
+                                </a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- Clubs -->
+            <div class="col-md-7">
+                <div style="width: 100%; height: 600px;" id="maincontainer">
+                    <div class="container-fluid h-100" style="background-color: #ddd; border-radius: 5%; border: 2px solid darkgrey">
+
+                        <!-- Header -->
+                        <div class="row h-30 overflow-auto" id="mainrow">
+                            <!-- icon -->
+                            <div class="col-lg-3 " style="overflow: auto">
+                                <img src="{% static 'images/facebook.png' %}" class="icon img-fluid" >
+                            </div>
+
+                            <!--Name -->
+                            <div class="col-lg-7 club-info">
+                                <h2 style="margin-left: 20px">Club Name</h2>
+                                <div style="line-height: normal">
+                                    <p class="fa fa-envelope w-100"><a href="#" style="margin-left: 4px;">mail@gmail</a></p>
+                                    <p class="fa fa-instagram w-100"><a href="#" style="margin-left: 4px">@instagram</a></p>
+                                    <p> and others</p>
+                                </div>
+                            </div>
+
+
+                            <!--Buttons -->
+                            <div class="col-lg-2" style="padding-top: 10px">
+                                <button class="btn-club fa fa-flag bg-danger" href="#">   Report</button>
+                                <button class="btn-club fa fa-search bg-info" href="#">   Info</button>
+                                <button class="btn-club fa fa-sign-in bg-success" href="#">   Join</button>
+                            </div>
+                        </div>
+
+                        <!-- Tabs -->
+                        <div class="row h-10" style="padding-top: 10px; ">
+                            <nav class="navbar navbar-expand navbar-dark h-80" aria-label="Second navbar example"
+                            style="background-color: #597eaa; border-radius: 5px; border: 2px solid black;">
+                                <div class="container-fluid w-100">
+                                  <div class="collapse navbar-collapse" id="navbarsExample02">
+                                    <ul class="navbar-nav me-auto w-100">
+                                      <li class="nav-item active w-25">
+                                        <a class="nav-link" aria-current="page" href="#">Announcements</a>
+                                      </li>
+                                      <li class="nav-item w-25">
+                                        <a class="nav-link" href="#">Posts</a>
+                                      </li>
+                                        <li class="nav-item w-25">
+                                        <a class="nav-link" href="#">Chat</a>
+                                      </li>
+                                        <li class="nav-item w-25">
+                                        <a class="nav-link" href="#">Survey</a>
+                                      </li>
+                                        <li class="nav-item w-25">
+                                        <a class="nav-link" href="#">Discussions</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </nav>
+                        </div>
+
+                        <!-- contents -->
+                        <div class="row" style="min-height: 150px; max-height: 325px; ">
+                            {% block content2 %}
+                            {% endblock %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!-- Events -->
+            <div class="col-md-2">
+                <div style="width: 100%; height: 600px; background-color: rebeccapurple"></div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
