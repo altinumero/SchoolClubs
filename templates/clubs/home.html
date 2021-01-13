@@ -6,8 +6,9 @@
 
 <div class="container py-5">
     <div class="row">
+        <div class="col-md-1"></div>
         <div class="col-md-5 ">
-            <div class="card-mb-4 box-shadow bg-primary">
+            <div class="card-mb-4 box-shadow bg-lightgray" style="border: 2px solid black">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height: 400px">
                   <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -37,17 +38,17 @@
             </div>
         </div>
         <div class="col-md-5 ">
-            <div class="card-mb-4 box-shadow bg-primary">
+            <div class="card-mb-4 box-shadow ">
 
                 <div class="row" style="margin: 0px 10px 20px 10px">
-                    <a class="bg-danger" style="height: 120px; width: 100%" href="#">Hello World</a>
+                    <a class="home-links" style="height: 120px; width: 100%; background-color: #597eaa" href="{% url 'announcement' %}">Social Clubs</a>
                 </div>
                 <div class="row" style="margin: 0px 10px 20px 10px">
-                    <a class="bg-info" style="height: 120px; width: 48%;" href="#">Hello World</a>
-                    <a class="bg-info" style="height: 120px; width: 48%;margin-left: 4%" href="#">Hello World</a>
+                    <a class="home-links" style="height: 120px; width: 48%; background-color: #a64d79" href="">All Clubs</a>
+                    <a class="home-links" style="height: 120px; width: 48%;margin-left: 4%; background-color: #674ea7" href="{% url 'userpage' %}">My Page</a>
                 </div>
                 <div class="row" style="margin: 0px 10px 0px 10px">
-                    <a class="bg-danger" style="height: 120px; width: 100%" href="#">Hello World</a>
+                    <a class="home-links" style="height: 120px; width: 100%; background-color: #45818e" href="{% url 'announcement' %}">My Club</a>
                 </div>
                 </div>
             </div>

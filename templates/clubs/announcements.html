@@ -3,28 +3,38 @@
 
 {% block content2 %}
 
-    <div class="container-fluid h-100" style="background-color: #597eaa;border-radius: 1%;
+    <div class="container-fluid h-100 pb-2" style="background-color: #597eaa;border-radius: 1%;
     border: 2px solid black;min-height: 150px; max-height: 305px;overflow: auto">
 
+        <button class="btn-add w-50 fa fa-plus " >   Add</button>
 
-        <a class="row bg-lightgray " style="height: 160px;margin-bottom: 5px; overflow: auto" href="#" >
-            <img class="annauncement-img img-fluid" src="{% static 'images/facebook.png' %}" >
-            <div class="annauncement-div">
-                <h4 class="annauncement-header w-100" >Event Name</h4>
-                <p class="annauncement-text w-100" >Event desc.</p>
-                <p class="fa fa-calendar w-100">   time</p>
-                <p class="fa fa-map-marker w-100">   location</p>
+        <a class="card link-card mt-2" href="#">
+            <div class="card-body">
+                <img src="{% static 'images/facebook.png' %}" class="card-img w-15">
+                <div class="card-text w-80" style="display: inline-block; float: right">
+                    <h3 class="">Event Name</h3>
+                    <p> event desc.</p>
+                    <p class="fa fa-calendar w-100">   time</p>
+                    <p class="fa fa-map-marker w-100">   location</p>
+                </div>
+
             </div>
         </a>
-        <a class="row bg-lightgray " style="height: 160px;margin-bottom: 5px;overflow: auto" href="#" >
-            <img class="annauncement-img img-fluid" src="{% static 'images/facebook.png' %}" >
-            <div class="annauncement-div">
-                <h4 class="annauncement-header w-100" >Event Name</h4>
-                <p class="annauncement-text w-100" >Event desc.</p>
-                <p class="fa fa-calendar w-100">   time</p>
-                <p class="fa fa-map-marker w-100">   location</p>
+
+        <a class="card link-card mt-2" href="#">
+            <div class="card-body">
+                <img src="{% static 'images/facebook.png' %}" class="card-img w-15">
+                <div class="card-text w-80" style="display: inline-block; float: right">
+                    <h3 class="">Event Name</h3>
+                    <p> event desc.</p>
+                    <p class="fa fa-calendar w-100">   time</p>
+                    <p class="fa fa-map-marker w-100">   location</p>
+                </div>
+
             </div>
         </a>
+
+
 
     </div>
 

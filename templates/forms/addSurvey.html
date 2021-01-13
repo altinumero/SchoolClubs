@@ -1,0 +1,39 @@
+
+
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/form.css' %}">
+
+
+<div class="main-form2 px-3 col-lg-5 mt-3 pb-3" style="height: auto">
+    <h3 class="text-center pt-3"> Add Survey</h3>
+
+    <form action="/action_page.php">
+        <div class="px-3 pt-3 pb-3 border-black mt-3" style="background-color: #597eaa; height: auto; overflow: auto">
+          <div class="pb-2 bx-2">
+              <div class="mt-2 mb-2">
+                <label class="w-25 display-inline"  for="event_desc">element:</label>
+                <input class="form-control display-inline w-70" id="sel1" type="text" placeholder="element...">
+              </div>
+              <div class="mt-2 mb-2">
+                <label class="w-25 display-inline"  for="event_desc">element:</label>
+                <input class="form-control display-inline w-70" id="sel1" type="text" placeholder="element...">
+              </div>
+              <button type="submit" class="btn btn-blue fa fa-plus" style="float: right; margin-right: 1em"> Add Element</button>
+          </div>
+      </div>
+
+        <div class="px-3 pt-3 pb-3 border-black mt-3" style="background-color: #597eaa; height: auto; overflow: auto">
+           <label class="w-25 display-inline"  for="event_desc">end date:</label>
+           <input type="date" class="form-control display-inline w-70" id="event_desc" placeholder="Event Description...">
+        </div>
+
+
+      <button type="submit" class="btn btn-submit" >Add</button>
+    </form>
+</div>
+
+{% endblock %}

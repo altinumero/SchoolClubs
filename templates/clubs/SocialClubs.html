@@ -6,75 +6,99 @@
         <div class="row">
             <!-- My clubs / All Clubs -->
             <div class="col-md-3 " >
-                <div class="row ">
                     <!-- My clubs -->
-                    <div class="card-mb-4 bg-lightgray" style="min-height: 50px; max-height: 300px;
+                    <div class="card bg-lightgray" style="min-height: 50px; max-height: 300px;
                      width: 96%; margin: 2%; border: 2px double black">
-                            <div class="row "><h4>My clubs</h4></div>
+                        <div class="card-header text-center mb-1" style="background-color: #597eaa">
+                            <h5>My Clubs</h5>
+                        </div>
+                        <div class="card-body" style="overflow: auto">
+                            <a class="card link-card mt-1 embed-responsive-16by9 my-club-events" href="#">
+                                <div class="card-body">
+                                    <img src="{% static 'images/facebook.png' %}" class="card-img w-15">
+                                    <div class="card-text w-80" style="display: inline-block; float: right">
+                                        <h3 class="">Club Name</h3>
+                                    </div>
 
-                            <div class="row" style="border: 2px solid black; margin: 0px 0px 5% 0px;overflow: auto;">
-                                <a class="clubs overflow-hidden" style="height: 50px" href="#">
-                                    <img class="img-thumbnail" src="{% static 'images/facebook.png' %}"
-                                         style="width: 36px;height: 36px;margin-top: 7px; display: inline-block">
-                                    <p class="name-club w-50" style="display: inline-block">Deneme</p>
-                                </a>
-                                <a class="clubs overflow-hidden" style="height: 50px" href="#">
-                                    <img class="img-thumbnail" src="{% static 'images/facebook.png' %}"
-                                         style="width: 36px;height: 36px;margin-top: 7px; display: inline-block">
-                                    <p class="name-club w-50" style="display: inline-block">Deneme</p>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
+                            <a class="card link-card mt-1 embed-responsive-16by9 my-club-events" href="#">
+                                <div class="card-body">
+                                    <img src="{% static 'images/facebook.png' %}" class="card-img w-15">
+                                    <div class="card-text w-80" style="display: inline-block; float: right">
+                                        <h3 class="">Club Name</h3>
+                                    </div>
+
+                                </div>
+                            </a>
+                            <a class="card link-card mt-1 embed-responsive-16by9 my-club-events" href="#">
+                                <div class="card-body">
+                                    <img src="{% static 'images/facebook.png' %}" class="card-img w-15">
+                                    <div class="card-text w-80" style="display: inline-block; float: right">
+                                        <h3 class="">Club Name</h3>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
                     </div>
 
                     <!-- All clubs -->
-                    <div class="card-mb-4 bg-lightgray" style="height: 300px; width: 96%; margin: 2%; border: 2px double black">
-                            <div class="row h-15"><h4>All Clubs</h4></div>
+                    <div class="bg-lightgray card" style="min-height: 50px; max-height: 300px;
+                     width: 96%; margin: 2%; border: 2px double black ">
+                        <div class="card-header text-center mb-1" style="background-color: #597eaa">
+                            <h5>All Clubs</h5>
+                        </div>
 
+                        <div class="card-body h-75" style="overflow: auto">
+                            <a class="card link-card mt-1 embed-responsive-16by9 my-club-events" href="#">
+                                <div class="card-body">
+                                    <img src="{% static 'images/facebook.png' %}" class="card-img w-15">
+                                    <div class="card-text w-80" style="display: inline-block; float: right">
+                                        <h3 class="">Club Name</h3>
+                                    </div>
 
-                            <div class="row h-80" style="border: 2px solid black; margin: 0px 0px 5% 0px;overflow: auto">
-                                <a class="clubs overflow-hidden" style="height: 50px" href="#">
-                                    <img class="img-thumbnail" src="{% static 'images/facebook.png' %}"
-                                         style="width: 36px;height: 36px;margin-top: 7px; display: inline-block">
-                                    <p class="name-club w-50" style="display: inline-block">Deneme</p>
-                                </a>
-                                <a class="clubs overflow-hidden" style="height: 50px" href="#">
-                                    <img class="img-thumbnail" src="{% static 'images/facebook.png' %}"
-                                         style="width: 36px;height: 36px;margin-top: 7px; display: inline-block">
-                                    <p class="name-club w-50" style="display: inline-block">Deneme</p>
-                                </a>
-                                <a class="clubs overflow-hidden" style="height: 50px" href="#">
-                                    <img class="img-thumbnail" src="{% static 'images/facebook.png' %}"
-                                         style="width: 36px;height: 36px;margin-top: 7px; display: inline-block">
-                                    <p class="name-club w-50" style="display: inline-block">Deneme</p>
-                                </a>
-                                <a class="clubs overflow-hidden" style="height: 50px" href="#">
-                                    <img class="img-thumbnail" src="{% static 'images/facebook.png' %}"
-                                         style="width: 36px;height: 36px;margin-top: 7px; display: inline-block">
-                                    <p class="name-club w-50" style="display: inline-block">Deneme</p>
-                                </a>
-                                <a class="clubs overflow-hidden" style="height: 50px" href="#">
-                                    <img class="img-thumbnail" src="{% static 'images/facebook.png' %}"
-                                         style="width: 36px;height: 36px;margin-top: 7px; display: inline-block">
-                                    <p class="name-club w-50" style="display: inline-block">Deneme</p>
-                                </a>
-                                <a class="clubs overflow-hidden" style="height: 50px" href="#">
-                                    <img class="img-thumbnail" src="{% static 'images/facebook.png' %}"
-                                         style="width: 36px;height: 36px;margin-top: 7px; display: inline-block">
-                                    <p class="name-club w-50" style="display: inline-block">Deneme</p>
-                                </a>
-                                <a class="clubs overflow-hidden" style="height: 50px" href="#">
-                                    <img class="img-thumbnail" src="{% static 'images/facebook.png' %}"
-                                         style="width: 36px;height: 36px;margin-top: 7px; display: inline-block">
-                                    <p class="name-club w-50" style="display: inline-block">Deneme</p>
-                                </a>
-                                <a class="clubs overflow-hidden" style="height: 50px" href="#">
-                                    <img class="img-thumbnail" src="{% static 'images/facebook.png' %}"
-                                         style="width: 36px;height: 36px;margin-top: 7px; display: inline-block">
-                                    <p class="name-club w-50" style="display: inline-block">Deneme</p>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
+                            <a class="card link-card mt-1 embed-responsive-16by9 my-club-events" href="#">
+                                <div class="card-body">
+                                    <img src="{% static 'images/facebook.png' %}" class="card-img w-15">
+                                    <div class="card-text w-80" style="display: inline-block; float: right">
+                                        <h3 class="">Club Name</h3>
+                                    </div>
+
+                                </div>
+                            </a>
+                            <a class="card link-card mt-1 embed-responsive-16by9 my-club-events" href="#">
+                                <div class="card-body">
+                                    <img src="{% static 'images/facebook.png' %}" class="card-img w-15">
+                                    <div class="card-text w-80" style="display: inline-block; float: right">
+                                        <h3 class="">Club Name</h3>
+                                    </div>
+
+                                </div>
+                            </a>
+                           <a class="card link-card mt-1 embed-responsive-16by9 my-club-events" href="#">
+                                <div class="card-body">
+                                    <img src="{% static 'images/facebook.png' %}" class="card-img w-15">
+                                    <div class="card-text w-80" style="display: inline-block; float: right">
+                                        <h3 class="">Club Name</h3>
+                                    </div>
+
+                                </div>
+                            </a>
+                            <a class="card link-card mt-1 embed-responsive-16by9 my-club-events" href="#">
+                                <div class="card-body">
+                                    <img src="{% static 'images/facebook.png' %}" class="card-img w-15">
+                                    <div class="card-text w-80" style="display: inline-block; float: right">
+                                        <h3 class="">Club Name</h3>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+
                     </div>
-                </div>
             </div>
 
 
@@ -105,9 +129,9 @@
 
                             <!--Buttons -->
                             <div class="col-lg-2" style="padding-top: 10px">
-                                <button class="btn-club fa fa-flag bg-danger" href="#">   Report</button>
-                                <button class="btn-club fa fa-search bg-info" href="#">   Info</button>
-                                <button class="btn-club fa fa-sign-in bg-success" href="#">   Join</button>
+                                <button class="btn-club fa fa-flag bg-danger" href="">   Report</button>
+                                <button class="btn-club fa fa-search bg-info" href="">   Info</button>
+                                <button class="btn-club fa fa-sign-in bg-success" href="">   Join</button>
                             </div>
                         </div>
 
@@ -119,19 +143,19 @@
                                   <div class="collapse navbar-collapse" id="navbarsExample02">
                                     <ul class="navbar-nav me-auto w-100">
                                       <li class="nav-item active w-25">
-                                        <a class="nav-link" aria-current="page" href="#">Announcements</a>
+                                        <a class="nav-link" aria-current="page" href="{% url 'announcement' %}">Announcements</a>
                                       </li>
                                       <li class="nav-item w-25">
-                                        <a class="nav-link" href="#">Posts</a>
+                                        <a class="nav-link" href="{% url 'post' %}">Posts</a>
                                       </li>
                                         <li class="nav-item w-25">
-                                        <a class="nav-link" href="#">Chat</a>
+                                        <a class="nav-link" href="{% url 'chat' %}">Chat</a>
                                       </li>
                                         <li class="nav-item w-25">
-                                        <a class="nav-link" href="#">Survey</a>
+                                        <a class="nav-link" href="{% url 'survey' %}">Survey</a>
                                       </li>
                                         <li class="nav-item w-25">
-                                        <a class="nav-link" href="#">Discussions</a>
+                                        <a class="nav-link" href="{% url 'discussion' %}">Discussion</a></a>
                                       </li>
                                     </ul>
                                   </div>
@@ -140,7 +164,7 @@
                         </div>
 
                         <!-- contents -->
-                        <div class="row" style="min-height: 150px; max-height: 325px; ">
+                        <div class="row social-content">
                             {% block content2 %}
                             {% endblock %}
                         </div>
@@ -155,7 +179,50 @@
 
             <!-- Events -->
             <div class="col-md-2">
-                <div style="width: 100%; height: 600px; background-color: rebeccapurple"></div>
+                <div class="card-mb-4 bg-lightgray mt-5" style="min-height: 50px; max-height: 450px;overflow: auto;
+                     width: 96%; margin: 2%; border: 2px double black;">
+                    <a class="card w-100 h-100" style="border: 2px double #aaa;">
+                    <div class="card-header text-center" style="background-color: #597eaa">
+                        <h5>Events</h5>
+                    </div>
+
+                    <a class="card link-card mt-1 mx-1 px-1 pt-1 pb-1 embed-responsive-16by9 my-club-events" href="#">
+                        <img class="card-img-top w-100 bg-primary" height="80" src="{% static 'images/university_icon.png' %}">
+                        <div class="card-text w-100 mx-2" style="line-height: normal; float: right; overflow: auto">
+                            <ul class="no-bullets">
+                                <li style="font-size: 50%"><h5>Event Name</h5></li>
+                                <li>Event  Desc</li>
+                                <li class="fa fa-calendar w-100" > time</li>
+                                <li class="fa fa-map-marker w-100"> location</li>
+                            </ul>
+                        </div>
+                    </a>
+
+                    <a class="card link-card mx-1 px-1 pt-1 pb-1 embed-responsive-16by9 my-club-events" href="#">
+                        <img class="card-img-top w-100 bg-primary" height="80" src="{% static 'images/university_icon.png' %}">
+                        <div class="card-text w-100 mx-2" style="line-height: normal; float: right; overflow: auto">
+                            <ul class="no-bullets">
+                                <li style="font-size: 50%"><h5>Event Name</h5></li>
+                                <li>Event  Desc</li>
+                                <li class="fa fa-calendar w-100" > time</li>
+                                <li class="fa fa-map-marker w-100"> location</li>
+                            </ul>
+                        </div>
+                    </a>
+
+                    <a class="card link-card mx-1 px-1 pt-1 pb-1 embed-responsive-16by9 my-club-events" href="#">
+                        <img class="card-img-top w-100 bg-primary" height="80" src="{% static 'images/university_icon.png' %}">
+                        <div class="card-text w-100 mx-2" style="line-height: normal; float: right; overflow: auto">
+                            <ul class="no-bullets">
+                                <li style="font-size: 50%"><h5>Event Name</h5></li>
+                                <li>Event  Desc</li>
+                                <li class="fa fa-calendar w-100" > time</li>
+                                <li class="fa fa-map-marker w-100"> location</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                    </div>
             </div>
         </div>
     </div>
